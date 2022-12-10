@@ -1,4 +1,4 @@
-import joblib
+# import joblib
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -6,13 +6,6 @@ from sklearn.feature_extraction import DictVectorizer
 
 import pickle
 
-# def load(filename):
-#     with open(filename, 'rb') as f_in:
-#         return pickle.load(f_in)
-dv = DictVectorizer(sparse=False)
-
-# # dv = load('dv.bin')
-# model = load('pipeline.bin')
 model_file = './pipeline.bin'
 
 with open(model_file, 'rb') as f_in:

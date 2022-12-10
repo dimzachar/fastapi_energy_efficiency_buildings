@@ -1,4 +1,4 @@
-# MLZoomcamp Mid Term Project using fastapi,pipelines and joblib
+# MLZoomcamp Mid Term Project using fastapi,pipelines
 # 
 
 # ## Importing libraries and dependencies:
@@ -73,12 +73,6 @@ df_class.head()
 
 df_class.columns = df_class.columns.str.lower().str.replace(' ', '_')
 
-
-# for col in df_class.columns:
-#     print(col)
-# 
-# We don't have any NULL values, all the values in all the columns are present.
-
 # # Training, splitting
 
 # @ SPLITTING THE DATASET FOR TRAINING AND TEST:
@@ -152,31 +146,8 @@ r2_score_final = r2_score(y_test, y_pred)
 print(f"Xgboost with rmse= {rmse_final}, r2 score test : {r2_score_final}")
 
 
-# import bentoml
-
-
-# bentoml.xgboost.save_model(
-#     'energy_efficiency_model',
-#     model,
-#     custom_objects={
-#         'dictVectorizer': dv
-#     },
-#     signatures={
-#         "predict": {
-#             "batchable": True,
-#             "batch_dim": 0,
-#         }
-#     }
-# )
-
-# print(f'saving model to {output_model}... ')
-
 with open(output_model, 'wb') as f_out:
     pickle.dump(model, f_out)
-
-# joblib.dump(model, 'model.joblib')
-# with open('model_metrics.txt', 'w') as f:
-#     f.write(f'mean_squared_error: {rmse_final}\n')
 
 print(f'the model is saved to {output_model}')
 

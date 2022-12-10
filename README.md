@@ -1,6 +1,8 @@
-## Project of the week FastAPI for Energy Efficiency of Buildings
+## FastAPI for Energy Efficiency of Buildings prediction model
 
-I update here my [Midterm Project](https://github.com/dimzachar/mlzoomcamp_projects/tree/master/00-midterm_project) to use FastAPI.
+This project is part of [Project of the Week at DataTalks.Club](https://github.com/DataTalksClub/project-of-the-week/blob/main/2022-12-07-fastapi.md)
+
+I update here my [Midterm Project](https://github.com/dimzachar/mlzoomcamp_projects/tree/master/00-midterm_project) to use FastAPI for serving this model.
 
 Repo contains the following:
 
@@ -29,14 +31,14 @@ or do it on your own environment.
 
 1. Download repo
 ```bash
-git clone https://github.com/dimzachar/mlzoomcamp_projects.git
+git clone https://github.com/dimzachar/fastapi_energy_efficiency_buildings
 ```
 
 2. For the virtual environment, I utilized pipenv. If you want to use the same venv as me, install pipenv and dependencies, navigate to the folder with the given files:
 ```bash
-cd 00-midterm_project
+cd fastapi_energy_efficiency_buildings
 pip install pipenv
-pipenv install numpy pandas seaborn bentoml tqdm jupyter scikit-learn==1.1.3 xgboost==1.7.1 pydantic==1.10.2
+pipenv install numpy pandas seaborn tqdm jupyter scikit-learn==1.1.3 xgboost==1.7.1 pydantic==1.10.2 fastapi uvicorn
 ```
 
 3. Enter shell. To open the `notebook.ipynb` and see all the models
