@@ -8,8 +8,6 @@ Repo contains the following:
 
 * `README.md` with
   * Instructions on how to run the project
-* Data `ENB2012_data.csv`
-* `notebook.ipynb` a Jupyter Notebook with the data analysis and models
 * Script `train.py` (updated to use Pipeline)
 * Script `predict.py` (uses FastAPI with Pydantic)
 * Json files `test.json` and `test2.json` to test the service. Change them to produce another prediction.
