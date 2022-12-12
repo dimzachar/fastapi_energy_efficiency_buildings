@@ -39,11 +39,10 @@ pip install pipenv
 pipenv install numpy pandas seaborn tqdm jupyter scikit-learn==1.1.3 xgboost==1.7.1 pydantic==1.10.2 fastapi uvicorn
 ```
 
-3. Enter shell. To open the `notebook.ipynb` and see all the models
+3. Enter shell
 
 ```bash
 pipenv shell
-pipenv run jupyter notebook
 ```
 
 For the following you need to run train.py
